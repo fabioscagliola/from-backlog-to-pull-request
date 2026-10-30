@@ -6,6 +6,14 @@ a:visited {
     text-decoration: underline !important;
 }
 
+blockquote {
+    border-color: #e95420 !important;
+}
+blockquote p {
+    font-size: 1rem !important;
+    line-height: 2 !important;
+}
+
 footer {
     opacity: .5;
     font-size: .66rem;
