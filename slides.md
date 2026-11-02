@@ -137,15 +137,44 @@ This is a customer in a highly regulated industry. A large, complex organization
 
 <br />
 
-![](/factory-architecture.jpg)
+<v-switch>
+  <template #1>
+    <img src="/factory-architecture-00.jpg" />
+  </template>
+  <template #2>
+    <img src="/factory-architecture-01.jpg" />
+  </template>
+  <template #3>
+    <img src="/factory-architecture-02.jpg" />
+  </template>
+  <template #4>
+    <img src="/factory-architecture-03.jpg" />
+  </template>
+  <template #5>
+    <img src="/factory-architecture-04.jpg" />
+    Authentication. Budgets. Guardrails. Logging. 
+  </template>
+  <template #6>
+    <img src="/factory-architecture-05.jpg" />
+  </template>
+  <template #7>
+    <img src="/factory-architecture-06.jpg" />
+  </template>
+</v-switch>
 
 <!--
 
+[click]
+
 This is my attempt at summarizing its architecture in a diagram.
 
-There’s this custom web app, frontend and backend, that is supposed to be used by the engineering teams to create jobs for the factory.
+Most of this infrastructure runs on AWS.
 
-Consider that this system was conceived to be used by several development teams working on thousands of different projects.
+Consider that this system was conceived to be used by tens of development teams working on hundreds of different projects.
+
+[click]
+
+There’s this custom web app, frontend and backend, that is supposed to be used by the engineering teams to create jobs for the factory.
 
 The frontend allows engineers to select tasks from Jira, bundle them into batches, and let the factory work on them.
 
@@ -155,17 +184,21 @@ The vision was that engineers, at the end of their day, would create a batch of 
 
 Between the backend of the custom web app and the workers there’s a simple asynchronous layer based on queues and events.
 
-Most of this infrastructure runs on AWS.
-
 When a job is picked up, a containerized worker is started. Inside it, Claude Code runs in non-interactive mode, aka headless mode.
 
 Headless is another expression that gives me the creeps.
 
+[click]
+
 So, I imagine Claude here as the Headless Horseman from *The Legend of Sleepy Hollow*.
+
+[click]
 
 And the Headless Horseman rides to Jira to retrieve the specification, then to GitLab to check out the repository, then to the code graph to explore the structure and relationships in the codebase.
 
 The graph is built by ingesting the source code with CodeGraphContext and storing the resulting relationships in a graph database. The graph provides the agents with structured project context, so they don’t have to rediscover everything from the codebase every time.
+
+[click]
 
 But agents can’t do much without models. And here comes LiteLLM, acting as a gateway between the Headless Horseman and the models hosted on Amazon Bedrock.
 
@@ -173,7 +206,11 @@ Why have an LLM gateway in the middle? Because it gives you one controlled entry
 
 Then there’s another gateway for tools. Amazon Bedrock AgentCore Gateway exposes approved tools via MCP, so instead of letting agents connect arbitrarily to anything and everything, you can give them controlled access to Jira, GitLab, and web search.
 
+[click]
+
 And around all this you need observability. And AgentCore integrates with CloudWatch and OpenTelemetry-compatible telemetry.
+
+[click]
 
 So, the Headless Horseman uses its skills and templates to refine, plan, code, test, and eventually create a merge request in GitLab.
 
@@ -526,16 +563,6 @@ We first built a baseline and then compared results against it over time.
 Our measurement framework covered delivery, quality, review effort, adoption, and cost.
 
 Here are some of the indicators we kept track of.
-
-- Time spent clarifying requirements. (Remember we started from “Add more developers and give them AI!” and the new joiners’ nightmare.)
-- Time spent reviewing agent outputs.
-- Time from “ready for development” to “done”.
-- Number of backlog items completed per sprint.
-- Number of backlog items carried over between sprints.
-- Findings during code review, quality assurance, and user acceptance testing.
-- Rework required before acceptance.
-- Developer feedback on usefulness and friction.
-- AI cost per completed backlog item.
 
 Some of these are precise numbers that can be aggregated in dashboards. Others are much harder to quantify, so we relied heavily on developer feedback and introduced recurring surveys.
 
