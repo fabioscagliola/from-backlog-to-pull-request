@@ -11,20 +11,18 @@ Building an AI-augmented development lifecycle
 <br />
 <br />
 
-<qr value="https://github.com/fabioscagliola/from-backlog-to-pull-request" />
+<qr value="https://fabioscagliola.github.io/from-backlog-to-pull-request" />
 
-[<carbon-logo-github /> https://github.com/fabioscagliola/from-backlog-to-pull-request](https://github.com/fabioscagliola/from-backlog-to-pull-request)
+[<carbon-logo-github /> https://fabioscagliola.github.io/from-backlog-to-pull-request](https://fabioscagliola.github.io/from-backlog-to-pull-request)
 
 <!--
 -->
 
 ---
 
-# Intro
+# Definitions
 
-I wanted to start with the classic opening question, but...
-
-## Definitions
+<br />
 
 <v-clicks>
 
@@ -78,20 +76,29 @@ Let me ask you another question. How many of you have seen an agentic factory su
 -->
 
 ---
+layout: two-cols-header
+---
 
 # Two real-world projects
 
 <br />
 
+::left::
+
 ## The factory
 
 An attempt at autonomous software delivery
+
+::right::
 
 ## Sally
 
 Human-driven AI-augmented SDLC
 
-<qr value="https://github.com/fabioscagliola/Sally" />
+<div class="flex items-center gap-10">
+  <img src="/sally.png" width="120" />
+  <qr value="https://github.com/fabioscagliola/Sally" />
+</div>
 
 [<carbon-logo-github /> https://github.com/fabioscagliola/Sally](https://github.com/fabioscagliola/Sally)
 
@@ -113,6 +120,8 @@ layout: section
 
 # The factory
 
+An attempt at autonomous software delivery
+
 <!--
 
 I work for Zühlke, a consulting company, and therefore I often jump from project to project.
@@ -123,11 +132,11 @@ The project is somewhere between the PoC and MVP stage, and the customer is stru
 
 The competitor’s mandate is over and, since the customer already trusts us, they would like us to take a look and help them move on from where they’re stuck.
 
-~~So, we start our onboarding.~~
+So, we start our onboarding.
 
-This is a customer in a highly regulated industry. A large, complex organization. ~~So, it takes us longer than usual to find the right people to talk to and get the information we need.~~
+This is a customer in a highly regulated industry. A large, complex organization. So, it takes us longer than usual to find the right people to talk to and get the information we need.
 
-~~Slowly but steadily, the picture of the factory takes shape in our minds.~~
+Slowly but steadily, the picture of the factory takes shape in our minds.
 
 -->
 
@@ -301,14 +310,17 @@ Without a baseline and a definition of success, you end up not even knowing whet
 
 # Main focus
 
-SPIFFE ( https://spiffe.io ) + SPIRE
+<br />
 
--	Getting rid of system accounts and shared personal access tokens.
--	Introducing delegated and on-behalf-of identity patterns, currently experimenting with Microsoft Entra Agent ID and agent identity blueprints.
--	Propagating identity attribution beyond the gateways, so that when an agent performs an action on GitLab, Jira, or another system, we can still establish who initiated it and under whose authority it happened.
--	Allowing agents to retrieve current information from the web through an AgentCore Web Search Tool instead of simply giving them unrestricted internet access.
--	Sitting in long meetings with the security folks discussing guardrails, prompt filtering, personally identifiable and highly confidential information, and what may or may not end up in prompts and logs.
--	And last but not least, defining how to measure success after rollout.
+-	System accounts and shared personal access tokens = 💀
+-	Delegated and on-behalf-of identity patterns
+-	Propagating identity attribution beyond the gateways
+-	AgentCore Web Search Tool
+-	Meet with the security folks discussing
+    - Guardrails
+    - Prompt filtering
+    - PII and HCI ending up in prompts and logs
+-	Define how to measure success after rollout
 
 <!--
 
@@ -320,6 +332,16 @@ So, my colleague and I are currently focused on (1) compliance and (2) responsib
 - Allowing agents to retrieve current information from the web through an AgentCore Web Search Tool instead of simply giving them unrestricted internet access.
 - Sitting in long meetings with the security folks discussing guardrails, prompt filtering, personally identifiable and highly confidential information, and what may or may not end up in - prompts and logs.
 - And last but not least, defining how to measure success after rollout.
+
+-->
+
+---
+layout: section
+---
+
+# Blank slide 🙃
+
+<!--
 
 Now, I submitted my proposal for this talk before joining this project. My original plan was to show you something closer to my own vision of AI-augmented development. A human-driven approach. Where developers make decisions throughout the lifecycle rather than just reviewing the results at the end.
 
@@ -354,7 +376,7 @@ Sally is a rather simple example of an agentic, AI-augmented SDLC spanning from 
 
 I call it human-driven because developers are always in control and they constitute the quality gates.
 
-~~It uses a code graph to provide agents with structured knowledge about the project, so they don’t have to repeatedly search the codebase. The goal is to improve quality and save precious AI credits.~~
+It uses a code graph to provide agents with structured knowledge about the project, so they don’t have to repeatedly search the codebase. The goal is to improve quality and save precious AI credits.
 
 -->
 
@@ -392,7 +414,7 @@ This is the spirit behind this project and, as far as I’m concerned, behind an
 
 # Where Sally came from
 
-At the beginning of the year...
+<br />
 
 - Less-than-ideal conditions
   - The documentation was outdated
@@ -477,6 +499,8 @@ Each agent comes with specific **skills** (such as retrieving the backlog item, 
 
 # Code graph
 
+<br />
+
 - In June the costs of AI skyrocketed
 - Search the huge codebase vs. query a structured representation of the codebase and its relationships
 - Two custom ingestion pipelines
@@ -508,6 +532,8 @@ Then we put a small custom MCP server in front of Neo4j and gave the agents a sk
 ---
 
 # Challenges
+
+<br />
 
 - Compliance requirements in a highly regulated environment
 - Cultural resistance
@@ -541,17 +567,17 @@ These are concerns I understand completely and tried to gently address with the 
 
 # Metrics
 
+<br />
+
 - Built a baseline and then compared results against it over time
 - Delivery, quality, review effort, adoption, and cost
-  - Time spent clarifying requirements.
-  - Time spent reviewing agent outputs.
-  - Time from “ready for development” to “done”.
-  - Number of backlog items completed per sprint.
-  - Number of backlog items carried over between sprints.
-  - Findings during code review, quality assurance, and user acceptance testing.
-  - Rework required before acceptance.
-  - Developer feedback on usefulness and friction.
-  - AI cost per completed backlog item.
+  - Time spent clarifying requirements
+  - Time spent reviewing agent outputs
+  - Time from “ready for development” to “done”
+  - Number of backlog items completed per sprint vs. carried over between sprints
+  - Findings during code review, quality assurance, and user acceptance testing
+  - Rework required before acceptance
+  - AI cost per completed backlog item
 - Precise numbers vs. harder to quantify
 
 <!--
@@ -572,13 +598,16 @@ Some of these are precise numbers that can be aggregated in dashboards. Others a
 
 # Developer feedback
 
-- “It reduced my development time by about 50%.”
-- “It helped me reduce the time by 30 or 40%.”
-- “The first implementation was around 70% good.”
-- “A lot of the specification was in attachments… it skipped that scope.”
-- “We really have to make it see the images.”
-- “For small bugs, it feels like overkill.”
-- The importance of <span v-mark="{ at: 0, color: '#e9562040', type: 'highlight' }">choosing the right model</span>
+<br />
+
+>“It reduced my development time by about 50%.”\
+>“It helped me reduce the time by 30 or 40%.”\
+>“The first implementation was around 70% good.”\
+>“A lot of the specification was in attachments and it skipped that scope.”\
+>“We really have to make it see the images.”\
+>“For small bugs, it feels like overkill.”
+
+The importance of <span v-mark="{ at: 0, color: '#e9562040', type: 'highlight' }">choosing the right model</span>
 
 <!--
 
@@ -606,7 +635,7 @@ We improved cost efficiency by using expensive models where reasoning mattered m
 
 # Wrapping up
 
-AI needs responsible adoption. And yes, regulation.
+<br />
 
 ![](/books.jpg)
 
@@ -625,6 +654,8 @@ But the practical risks are already here.
 ---
 
 # Practical risks
+
+<br />
 
 - Lock a bunch of agents in a dark room and hope they behave?! 😱
 - A factory where nobody really knows what’s happening inside their manufacturing plants?! 😱
@@ -646,6 +677,8 @@ After all, we regulate all sorts of things. Think of medicine and transportation
 ---
 
 # Takeaways
+
+<br />
 
 - Augment people, don’t replace them
 - Give agents context
