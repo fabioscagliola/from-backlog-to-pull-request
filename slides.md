@@ -13,9 +13,47 @@ Building an AI-augmented development lifecycle
 
 <qr value="https://fabioscagliola.github.io/from-backlog-to-pull-request" />
 
-[<carbon-logo-github /> https://fabioscagliola.github.io/from-backlog-to-pull-request](https://fabioscagliola.github.io/from-backlog-to-pull-request)
+[https://fabioscagliola.github.io/from-backlog-to-pull-request](https://fabioscagliola.github.io/from-backlog-to-pull-request)
 
 <!--
+
+The slides, including my speaker notes, are available online if you'd like to follow along or revisit them later.
+
+-->
+
+---
+layout: two-cols-header
+---
+
+::left::
+
+# Who am I?
+
+<br />
+
+- Lead Software Architect @ Zühlke
+- Founder @ The Code Tailors
+- Making music as Nothence
+- Writing weird stories
+
+<br />
+
+<qr value="https://fabioscagliola.com" />
+
+[https://fabioscagliola.com](https://fabioscagliola.com)
+
+::right::
+
+![](/who-am-i.jpg)
+
+<!--
+
+Quick introduction. I'm a Lead Software Architect at Zühlke and the founder of The Code Tailors.
+
+In my parallel life, I've released four albums and self-published a novel.
+
+My dream is to land a publishing deal one day and become a full-time writer.
+
 -->
 
 ---
@@ -100,7 +138,7 @@ Human-driven AI-augmented SDLC
   <qr value="https://github.com/fabioscagliola/Sally" />
 </div>
 
-[<carbon-logo-github /> https://github.com/fabioscagliola/Sally](https://github.com/fabioscagliola/Sally)
+[https://github.com/fabioscagliola/Sally](https://github.com/fabioscagliola/Sally)
 
 <!--
 
@@ -362,7 +400,7 @@ Human-driven AI-augmented SDLC
   <qr value="https://github.com/fabioscagliola/Sally" />
 </div>
 
-[<carbon-logo-github /> https://github.com/fabioscagliola/Sally](https://github.com/fabioscagliola/Sally)
+[https://github.com/fabioscagliola/Sally](https://github.com/fabioscagliola/Sally)
 
 <!--
 
