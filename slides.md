@@ -17,7 +17,7 @@ Building an AI-augmented development lifecycle
 
 <!--
 
-The slides, including my speaker notes, are available online if you'd like to follow along or revisit them later.
+The slides, including my speaker notes, are available online if you’d like to follow along or revisit them later.
 
 -->
 
@@ -48,9 +48,9 @@ layout: two-cols-header
 
 <!--
 
-Quick introduction. I'm a Lead Software Architect at Zühlke and the founder of The Code Tailors.
+Quick introduction. I’m a Lead Software Architect at Zühlke and the founder of The Code Tailors.
 
-In my parallel life, I've released four albums and self-published a novel.
+In my parallel life, I’ve released four albums and self-published a novel.
 
 My dream is to land a publishing deal one day and become a full-time writer.
 
@@ -199,7 +199,6 @@ Slowly but steadily, the picture of the factory takes shape in our minds.
   </template>
   <template #5>
     <img src="/factory-architecture-04.jpg" />
-    Authentication. Budgets. Guardrails. Logging. 
   </template>
   <template #6>
     <img src="/factory-architecture-05.jpg" />
@@ -377,20 +376,6 @@ So, my colleague and I are currently focused on (1) compliance and (2) responsib
 layout: section
 ---
 
-# Blank slide 🙃
-
-<!--
-
-Now, I submitted my proposal for this talk before joining this project. My original plan was to show you something closer to my own vision of AI-augmented development. A human-driven approach. Where developers make decisions throughout the lifecycle rather than just reviewing the results at the end.
-
-Don’t get me wrong. I’ve learned a lot from this new engagement. But honestly, more than anything, it has confirmed many of my ideas about what an agentic, AI-augmented SDLC should NOT look like.
-
--->
-
----
-layout: section
----
-
 # Sally
 
 Human-driven AI-augmented SDLC
@@ -499,7 +484,6 @@ This is the scenario in which we introduced an agentic SDLC almost identical to 
 ![](/sally-lifecycle.jpg)
 
 <!--
-Let’s give Sally a closer look.
 
 The lifecycle revolves around three agents: Refiner, Planner, and Coder.
 
@@ -529,7 +513,7 @@ When all the boxes are checked, the developer approves and asks the Coder to cre
 
 So, you see how human hands remain firmly on the steering wheel throughout the lifecycle.
 
-Each agent comes with specific **skills** (such as retrieving the backlog item, querying the code graph, or creating the pull request) and with guidelines and **templates** for producing the artifacts passed from one stage to the next.
+Each agent comes with specific skills (such as retrieving the backlog item, querying the code graph, or creating the pull request) and with guidelines and templates for producing the artifacts passed from one stage to the next.
 
 -->
 
@@ -627,6 +611,16 @@ We first built a baseline and then compared results against it over time.
 Our measurement framework covered delivery, quality, review effort, adoption, and cost.
 
 Here are some of the indicators we kept track of.
+
+- Time spent clarifying requirements. (Remember we started from “Add more developers and give them AI!” and the new joiners’ nightmare.)
+- Time spent reviewing agent outputs.
+- Time from “ready for development” to “done”.
+- Number of backlog items completed per sprint.
+- Number of backlog items carried over between sprints.
+- Findings during code review, quality assurance, and user acceptance testing.
+- Rework required before acceptance.
+- Developer feedback on usefulness and friction.
+- AI cost per completed backlog item.
 
 Some of these are precise numbers that can be aggregated in dashboards. Others are much harder to quantify, so we relied heavily on developer feedback and introduced recurring surveys.
 
@@ -738,7 +732,7 @@ Anyway, these are the points I hope you take away from both stories today.
 
 ---
 
-# That's all, folks!
+# That’s all, folks!
 
 <br />
 
