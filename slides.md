@@ -119,13 +119,15 @@ layout: two-cols-header
 
 # Two real-world projects
 
+Both in highly regulated environments
+
 <br />
 
 ::left::
 
-## The factory
+## The agentic factory
 
-An attempt at autonomous software delivery
+Or an attempt at building one
 
 ::right::
 
@@ -148,6 +150,8 @@ The first one is what I would call an attempt at building a factory. Perhaps not
 
 The second one I don’t even call a factory. In fact, I call it an AI-augmented development lifecycle. Not dark at all. Actually, very light. Human-driven.
 
+Both took place in highly regulated environments, where getting something to work and getting it into production are two separate challenges.
+
 Let’s dive right into the factory first.
 
 -->
@@ -156,9 +160,9 @@ Let’s dive right into the factory first.
 layout: section
 ---
 
-# The factory
+# The agentic factory
 
-An attempt at autonomous software delivery
+Or an attempt at building one
 
 <!--
 
@@ -313,6 +317,8 @@ But the risk of a human bottleneck was not the main reason why the factory was s
 
 My colleague and I identified two major design flaws. And a third, non-technical problem.
 
+[click]
+
 First, the factory had not been designed to meet the auditability and accountability requirements of a highly regulated environment.
 
 You all know how a PoC or MVP is typically developed. Requirements are sacrificed to meet the deadline. Especially non-functional requirements. And in this case, some of the most critical. Identity attribution. Delegation. Authorization. Auditability. In a highly regulated environment, you need to be able to answer questions from auditors.
@@ -324,11 +330,15 @@ You all know how a PoC or MVP is typically developed. Requirements are sacrifice
 - Under whose authority was he acting?
 - Who executed that *drop database* command in production?
 
+[click]
+
 Second, the factory had not been designed with the proper guardrails in place, particularly around the handling of personally identifiable and highly confidential information.
 
 And, more generally, around the risks connected to the unpredictable nature of the Headless Horseman. Because we don’t know what prompts he will send to the models.
 
 That’s one of the reasons why there’s an LLM gateway. Fine. But no one had sat down with the security folks and conducted a proper gap analysis against the compliance requirements. No one had conducted a proper risk analysis.
+
+[click]
 
 The third problem we identified wasn’t technical, but nonetheless crucial to adoption. No one had defined how to measure success. What are the goals?
 
