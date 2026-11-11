@@ -399,17 +399,13 @@ Human-driven AI-augmented SDLC
 
 <!--
 
-So, let’s now go back in time to my previous project. A less dark, more human-driven approach. Definitely simpler. And, I believe, a better starting point for organizations approaching agentic, AI-augmented delivery without trying to jump too far too fast.
+Now, something closer to my own vision of AI-augmented development.
 
-This is another real-world example. It was born on the customer project I worked on in the first half of this year. And in preparation for today, I recreated the approach outside the customer environment, with the same core features, in a public project on GitHub, so I could give you something tangible to take away.
+A human-driven approach where developers are always in control and they constitute the quality gates.
 
-I named it Sally.
+A rather simple example of an AI-augmented SDLC spanning from backlog item to pull request.
 
-Sally is a rather simple example of an agentic, AI-augmented SDLC spanning from backlog item to pull request.
-
-I call it human-driven because developers are always in control and they constitute the quality gates.
-
-It uses a code graph to provide agents with structured knowledge about the project, so they don’t have to repeatedly search the codebase. The goal is to improve quality and save precious AI credits.
+Let’s go back in time to my previous project. And in preparation for today, I recreated the approach outside the customer environment, with the same core features, in a public repository on GitHub, so I could give you something tangible to take away.
 
 -->
 
