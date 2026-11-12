@@ -31,8 +31,8 @@ layout: two-cols-header
 
 <br />
 
-- Lead Software Architect @ Zühlke
-- Founder @ The Code Tailors
+- Software Architect @ [Zühlke](https://zuhlke.com)
+- Founder @ [The Code Tailors](https://thecodetailors.com)
 - Making music as Nothence
 - Writing weird stories
 
@@ -48,7 +48,7 @@ layout: two-cols-header
 
 <!--
 
-Quick introduction. I’m a Lead Software Architect at Zühlke and the founder of The Code Tailors.
+Quick introduction. I’m a Software Architect at Zühlke and the founder and Managing Director of The Code Tailors.
 
 In my parallel life, I’ve released four albums and self-published a novel.
 
