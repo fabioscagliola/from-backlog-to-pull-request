@@ -119,7 +119,7 @@ layout: two-cols-header
 
 # Two real-world projects
 
-Both in highly regulated environments
+Both in highly regulated industries
 
 <br />
 
@@ -166,13 +166,13 @@ Or an attempt at building one
 
 <!--
 
-I work for Zühlke, a consulting company, and therefore I often jump from project to project.
+In my work at Zühlke, a consulting company, I often jump from project to project.
 
-Recently, a colleague and I were asked to assess an agentic factory set up by a competitor.
+Recently, a colleague and I were asked to assess an agentic factory built for a customer by another supplier.
 
 The project is somewhere between the PoC and MVP stage, and the customer is struggling to move forward.
 
-The competitor’s mandate is over and, since the customer already trusts us, they would like us to take a look and help them move on from where they’re stuck.
+The previous supplier’s mandate is over and, since the customer already trusts us, they would like us to take a look and help them move on from where they’re stuck.
 
 So, we start our onboarding.
 
