@@ -371,7 +371,7 @@ Without a baseline and a definition of success, you end up not even knowing whet
 
 <!--
 
-So, my colleague and I are currently focused on (1) compliance and (2) responsible adoption. And we’re gradually introducing SPIFFE (  ), the Secure Production Identity Framework for Everyone, together with SPIRE, its runtime implementation. Here are some of the main tasks on our list.
+So, my colleague and I are currently focused on (1) compliance and (2) responsible adoption. And we’re gradually introducing SPIFFE (https://spiffe.io), the Secure Production Identity Framework for Everyone, together with SPIRE, its runtime implementation. Here are some of the main tasks on our list.
 
 - Getting rid of system accounts and shared personal access tokens.
 - Introducing delegated and on-behalf-of identity patterns, currently experimenting with Microsoft Entra Agent ID and agent identity blueprints.
@@ -737,12 +737,32 @@ Anyway, these are the points I hope you take away from both stories today.
 -->
 
 ---
+layout: two-cols-header
+---
 
 # That’s all, folks!
 
 <br />
 
-![](/moltes-gracies.jpg)
+::left::
+
+<div class="flex flex-col items-center">
+
+  <img src="/moltes-gracies.jpg" class="w-60 h-60 object-cover object-center" />
+
+</div>
+
+::right::
+
+<div class="flex flex-col items-center">
+
+  <br />
+
+  [Read the full story](https://fabioscagliola.com/blog/from-backlog-to-pull-request)
+
+  <qr value="https://fabioscagliola.com/blog/from-backlog-to-pull-request" />
+
+</div>
 
 <!--
 -->
